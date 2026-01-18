@@ -1,1 +1,11 @@
-<p>profile works!</p>
+<div class="profile">
+    <img class="bluring" [ngSrc]="'portfolio-avatar.png'" width="300" height="300" alt="portfolio-avatar" placeholder="portfolio-avatar-blur.png" priority>
+    <h2>{{ name }}</h2>
+    <p>{{ role }}</p>
+    <p>{{ location }}</p>
+    <div class="social-links">
+        <a class="social-button" [href]="linkedinUrl" target="_blank">LinkedIn</a>
+        <a class="social-button" [href]="githubUrl" target="_blank">GitHub</a>
+    </div>
+</div>
+
