@@ -1,1 +1,11 @@
-<p>project works!</p>
+@for (project of projects; track project.id) {
+    <div class="project">
+        <h3>{{ project.name }}</h3>
+        <p>{{ project.description }}</p>
+        @if (project.status === 'Completed') {
+            <span>Complete</span>
+        } @else {
+            <span> In progress</span>
+        }
+    </div>
+}
